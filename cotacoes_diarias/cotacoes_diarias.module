@@ -59,11 +59,10 @@ function cotacoes_diarias_block_view($delta = '') {
 
     // 🔹 Monta o HTML seguro
     $output  = '<div class="cotacoes-diarias">';
-    $output .= '<strong>💵 ' . t('Dólar:') . '</strong> R$ ' . $dolar . ' | ';
-    $output .= '<strong>🌽 ' . t('Milho:') . '</strong> R$ ' . $milho . '/sc | ';
-    $output .= '<strong>🌱 ' . t('Soja:')  . '</strong> R$ ' . $soja . '/sc';
-    $output .= '<br><small>' . t('Atualizado: @data', array('@data' => $data)) . '</small>';
-    $output .= '<br><small style="color:#666;font-size:10px;">* ' . t('Milho e Soja: valores aproximados do mercado internacional') . '</small>';
+    $output .= '<div class="item dolar"><strong>' . t('Dólar:') . '</strong> <span class="value">R$ ' . $dolar . '</span></div>';
+    $output .= '<div class="item milho"><strong>' . t('Milho:') . '</strong> <span class="value">R$ ' . $milho . '/sc</span></div>';
+    $output .= '<div class="item soja"><strong>' . t('Soja:')  . '</strong> <span class="value">R$ ' . $soja . '/sc</span></div>';
+    $output .= '<div class="item data"><small>' . t('Atualizado em: @data', array('@data' => $data)) . '</small></div>';    
     $output .= '</div>';
 
     // 🔹 Retorna título e conteúdo
