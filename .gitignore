@@ -1,0 +1,19 @@
+# Arquivos de teste (caso você crie novos)
+test_*.php
+debug_*.php
+
+# Arquivos temporários
+*.tmp
+*.bak
+*.swp
+*~
+.DS_Store
+
+# IDEs
+.idea/
+.vscode/
+*.sublime-*
+
+# Logs
+*.log
+
